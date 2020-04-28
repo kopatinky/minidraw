@@ -56,6 +56,9 @@ $(function() {
   const sendMessage = () => {
     var message = $inputMessage.val();
     // Prevent markup from being injected into the message
+    if (message == 'reset') {
+      onResize();
+    }
     message = cleanInput(message);
     // if there is a non-empty message and a socket connection
     if (message && connected) {
