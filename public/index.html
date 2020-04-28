@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Rysowanie</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <ul class="pages">
+    <li class="page drawing">
+      <canvas class="whiteboard"></canvas>
+      <div class="colors">
+        <div class="color black"></div>
+        <div class="color red"></div>
+        <div class="color green"></div>
+        <div class="color blue"></div>
+        <div class="color yellow"></div>
+      </div>
+    </li>
+    <li class="chat page">
+      <div class="chatArea">
+        <ul class="messages"></ul>
+      </div>
+      <input class="inputMessage" placeholder="Wpisz tutaj..." />
+    </li>
+    <li class="login page">
+      <div class="form">
+        <h3 class="title">Imię</h3>
+        <input class="usernameInput" type="text" maxlength="14" />
+      </div>
+    </li>    
+  </ul>
+
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/main.js"></script>
+</body>
+
+</html>
